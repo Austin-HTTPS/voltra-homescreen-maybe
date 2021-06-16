@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/798406727691141130/836350615332323389/epic-coffee.png">
+    <meta property="og:title" content="Voltra" />
+    <meta property="og:url" content="/" />
+    <meta property="og:description" content="Use voltra" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Voltra</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/798406727691141130/836350615332323389/epic-coffee.png" type="image/png" sizes="16x16">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+		<style>
+		.banner {
+			background: url(img/banner.png);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 90vh;
+			color: #fff;
+			background-color: #000;
+		}
+		
+		.banner .headText {
+			font-size: 30px;
+			text-align: center;
+			padding-top: 10vh;
+		}
+
+		.banner .headText span:nth-child(odd) { color: #AABBC3; }
+		.banner .headText span:nth-child(even) { color: #F9D77B; }
+		.banner .headText span:nth-child(1) { font-size: 35px; } /* W */
+		.banner .headText span:nth-child(9) { font-size: 35px; } /* F */
+		
+		.banner .subText {
+			font-size: 20px;
+			text-align: center;
+			color: #cab;
+			padding-top: 10px;
+		}
+
+		.banner .content {
+			height: 60%;
+			margin-top: 5%;
+		}
+
+		.banner .content .card {
+			width: 300px;
+			height: 300px;
+			background-color: #fff;
+			box-shadow: 0px 5px 5px #865FC5;
+			display: inline-block;
+			margin: 0px 5px 0px 5px;
+		}
+
+		.banner .content .card img {
+			width: 100%;
+			cursor: pointer;
+			opacity: 0.8;
+			transition: 0.3s;
+		}
+
+		.banner .content .card img:hover {
+			opacity: 1;
+		}
+		
+		.banner .content .card h3 {
+			color: #333;
+			text-align: center;
+		}
+
+		.banner .content .card a {
+			background-color: #865FC5;
+			color: #fff;
+			padding: 5px 25px;
+			font-size: 17px;
+			display: inline-block;
+			text-decoration: none;
+			transition: 0.3s;
+		}
+
+		.banner .content .card a:hover {
+			background-color: #333;
+			letter-spacing: 2px;
+		}
+
+		@media screen and (max-width: 990px)
+		{
+			.banner .content .card {
+				display: none;
+			}
+			.banner .headText {
+				padding-top: 30vh;
+			}
+		}
+
+		@media screen and (max-height: 615px)
+		{
+			.banner .content .card {
+				display: none;
+			}
+			.banner .headText {
+				padding-top: 30vh;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<header id='header'>
+			<!-- Side Navigation -->
+			<div id="sideNav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<hr style="border: 2px solid #fff;">
+				<div class="innerNav">
+					<a href="#"><i class="fa fa-home"></i> Home</a>
+					<a href="#"><i class="fa fa-bug"></i> Hosting</a>
+					<a href="#"><i class="fa fa-code"></i> URL</a>
+					<a href="#"><i class="fa fa-gamepad"></i> Testing</a>
+				</div>
+				<div class="social"> <!-- Social Links -->
+					<a href="https://github.com/ChatComm" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="https://twitter.com/ChatCom_" target="_blank"><i class="fa fa-twitter"></i></a>
+				</div>
+				<div class="support"> <!-- support developer -->
+					<a href="mailto:chatcomm.mail@gmail.com"><i class="fa fa-envelope"></i> Email Me</a>
+				</div>
+			</div>
+
+			<!-- Main Nav -->
+			<span class="hamburgerIcon" onclick="openNav()">&#9776;</span>
+			<div class="logo"><a href="#">Voltra</a></div>
+			<nav id="mainNav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Hosting</a></li>
+					<li><a href="#">Shorting</a></li>
+					<li><a href="#">Testing</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Banner  -->
+		<div class="banner">
+			<div class="headText">
+				<!-- This is to seperate each letter of word as element for effects
+						Initially have used CSS static effect only as seen, but we can add more fancy javascript effects for sites that depend on banner like divs.
+				-->
+				<span>W</span>
+				<span>E</span>
+				<span>L</span>
+				<span>C</span>
+				<span>O</span>
+				<span>M</span>
+				<span>E</span>
+				<span>.</span>
+				<span>F</span>
+				<span>O</span>
+				<span>L</span>
+				<span>K</span>
+				<span>S</span>
+				<span>!</span>
+			</div>
+			<div class="subText"><b>We do:</b> <i>Beta testing, Image hosting, and URL shorting.</i></div>
+			<center>
+			<div class="content">
+				<div class="card" id="card1">
+					<img src="img/home/banner_card1.jpg" class="card_img" id="card_img1" alt="">
+					<h3>Image Hosting</h3>
+					<center><a href="#">Explore</a></center>
+				</div>
+				<div class="card" id="card2">
+					<img src="img/home/banner_card2.jpg" class="card_img" id="card_img2" alt="">
+					<h3>Beta Testing</h3>
+					<center><a href="#">Explore</a></center>
+				</div>
+				<div class="card" id="card3">
+					<img src="img/home/banner_card3.jpg" class="card_img" id="card_img3" alt="">
+					<h3>URL Shortner</h3>
+					<center><a href="#">Explore</a></center>
+				</div>
+			</div>
+			</center>
+		</div>
+
+		<footer>
+			<h3>Made by ChatComm | <a href="https://twitter.com/ChatComm_" target="_blank">ChatComm</a></h3>
+		</footer>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		// side naigation //
+		function openNav() {
+			document.getElementById("sideNav").style.width = "250px";
+		}
+		function closeNav() {
+			document.getElementById("sideNav").style.width = "0";
+		}
+
+		// banner cards //
+		$(document).ready(function(){
+			// card click
+			$(".card").click(function(e){
+				var $id = e.target.id;
+				card_click($id);
+			});
+			// card image click
+			$(".card_img").click(function(e){
+				var $id = e.target.id;
+				card_img_click($id);
+			});
+		});
+
+		function card_click(elem)
+		{
+			switch (elem) {
+				case "card1":
+					window.location.href="#";
+				case "card2":
+					window.location.href="#";
+				case "card3":
+					window.location.href="#";
+			}
+		}
+
+		function card_img_click(elem)
+		{
+			switch (elem) {
+				case "card_img1":
+					window.location.href="#";
+				case "card_img2":
+					window.location.href="#";
+				case "card_img3":
+					window.location.href="#";
+			}
+		}
+		</script>
+	</body>
+</html>
